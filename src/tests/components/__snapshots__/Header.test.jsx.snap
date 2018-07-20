@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header>
+  <h1
+    className="text-center display-3"
+  >
+    Expensify
+  </h1>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    exact={true}
+    to="/"
+  >
+    <p
+      className="display-5"
+    >
+      Dashboard
+    </p>
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    to="/create"
+  >
+    <p
+      className="display-5"
+    >
+      Create Expense
+    </p>
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    to="/edit/id"
+  >
+    <p
+      className="display-5"
+    >
+      Edit Expense
+    </p>
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    aria-current="page"
+    to="/help"
+  >
+    <p
+      className="display-5"
+    >
+      Help
+    </p>
+  </NavLink>
+</header>
+`;
