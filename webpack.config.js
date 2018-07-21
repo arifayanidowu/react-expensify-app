@@ -10,7 +10,7 @@ module.exports = (env) => {
         },
         output: {
             filename: '[name].bundle.js',
-            path: path.resolve(__dirname, 'public')
+            path: path.resolve(__dirname, 'public', 'dist')
         },
         module: {
             rules: [{
@@ -53,7 +53,8 @@ module.exports = (env) => {
         devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true
+            historyApiFallback: true,
+            publicPath: '/dist/'
         }
     };
 }
