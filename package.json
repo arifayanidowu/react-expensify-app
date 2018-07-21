@@ -5,14 +5,17 @@
     "license": "MIT",
     "homepage": "http://localhost:8080/",
     "private": true,
+    "engines": {
+        "node": "10.1.0"
+    },
     "scripts": {
         "serve": "live-server public",
         "build:dev": "webpack",
         "build:prod": "webpack -p --env production",
         "dev-server": "webpack-dev-server --mode development",
         "test": "jest --config=jest.config.json --watchAll",
-        "start": "node server/server",
-        "heroku-postbuild": "yarn run build:prod"
+        "start": "node server/server.js",
+        "heroku-postbuild": "npm run build:prod"
     },
     "dependencies": {
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
