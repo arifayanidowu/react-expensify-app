@@ -9,7 +9,6 @@ export class EditExpensePage extends React.Component{
   onSubmit = (expense) => {
     this.props.startEditExpense(this.props.expense.id, expense);
     this.props.history.push('/');
-    //console.log('Updated', expense);
   };
 
   onRemove = () => {
