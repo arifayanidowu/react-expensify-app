@@ -1,0 +1,13 @@
+.show-for-mobile {
+    @media (min-width: $desktop-breakpoint){
+        display: none;
+        font-weight: 300;
+    }
+}
+
+.show-for-desktop {
+    @media (max-width: $desktop-breakpoint - 0.1rem){
+        display: none;
+        font-weight: 300;
+    }
+}

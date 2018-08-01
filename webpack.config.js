@@ -14,11 +14,9 @@ module.exports = (env) => {
     const isProduction = env === 'production';
     return {
         mode: 'production',
-        entry: {
-            index: './src/app.jsx'
-        },
+        entry:['babel-polyfill','./src/app.jsx'],
         output: {
-            filename: '[name].bundle.js',
+            filename: 'app.js',
             path: path.resolve(__dirname, 'public', 'dist')
         },
         module: {
@@ -52,7 +50,7 @@ module.exports = (env) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: "[name].css",
+                filename: "style.css",
                 chunkFilename: "[id].css"
             }),
             new webpack.DefinePlugin({
